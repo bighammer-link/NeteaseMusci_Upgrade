@@ -4,7 +4,7 @@
 本项目主要灵感来自<a href = 'https://github.com/ZainCheung/netease-cloud'><b>网易云音乐升级全家桶</b></a>,因为该项目已经停止维护，所以就自己动手写了一个简单的。
 作者水平有限，代码写的很臭😥😥😥，但是能跑🤩🤩🤩
 
->>全部代码都在放在了main.py中 <br/>
+全部代码都在放在了main.py中 <br/>
 
 ## 🍷🍷注意：由于网易云音乐使用手机号和邮箱登录增加了云盾验证，目前还无法绕过验证，故此项目采用的是<b>扫码登录</b>的方式，同时也防止你的密码泄露
 ## ⛔使用须知⛔
@@ -23,7 +23,7 @@ user_sl_id = ""
 1.api: 部署完上面的网易云音乐API项目后拿到你自己的API，填入此处  <br/>
 2.SERVER酱的推送方式，不想使用的话，直接忽略即可  <br/>
 3.user_sl_id：歌单id号，下面提及获取方法   <br/>
-## 使用方法
+### 使用方法
 <br/>
 1、部署网易云音乐API,<a href='https://github.com/Binaryify/NeteaseCloudMusicApi'><b/>NeteaseCloudMusicApi</b></a>，部署完成后，拿到你自己的API地址，填入到main.py中的'''api='' '''内 <br/>
 2、安装项目依赖,''' pip install -r requirements.txt''',若在运行过程中，缺少某个依赖，直接使用'''pip install'''进行安装即可<br/>
@@ -34,10 +34,10 @@ user_sl_id = ""
 效果展示：<br/>
 运行前和运行后，听歌数量对比
 ![](img/example.png)
-***
 
 
-## 部署方法
+
+### 部署方法
 <br/>
  实现每天定时执行脚本的话，有很多种方法，可自上网找部署教程：<br/>
  1.将脚本部署在<a href="https://console.cloud.tencent.com/scf/list?rid=33&ns=default">腾讯云函数</a>上。云函数使用教程，可自行百度。（不要忘了安装requirement.txt中的依赖😛） <br/>
