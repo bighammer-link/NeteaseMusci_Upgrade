@@ -43,7 +43,7 @@ user_sl_id = ""
 
 ## 部署方法
 <br/>
- 实现每天定时执行脚本的话，有很多种方法，可自上网找部署教程：<br/>
+ 
  1.将脚本部署在<a href="https://console.cloud.tencent.com/scf/list?rid=33&ns=default">腾讯云函数</a>上。云函数使用教程，可自行百度。（不要忘了安装requirement.txt中的依赖😛） <br/>
  2.你如果拥有自己的服务器的话，可以部署在<b><a href="https://github.com/whyour/qinglong">青龙面板</a></b>上。作者在使用的工具，推荐青龙面板，比较好操作。青龙面板需要到依赖管理    中的python3下面自行安装requirement.txt中的依赖<br/>
  3.在本地电脑部署，比较简单<br/>
