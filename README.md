@@ -24,12 +24,13 @@ user_sl_id = ""
 2.SERVER酱的推送方式，不想使用的话，直接忽略即可  <br/>
 3.user_sl_id：歌单id号，下面提及获取方法
 <br/>
-##   使用方法
-<br/>
-1、部署网易云音乐API,<a href='https://github.com/Binaryify/NeteaseCloudMusicApi'><b/>NeteaseCloudMusicApi</b></a>，部署完成后，拿到你自己的API地址，填入到main.py中的` api='' `内 <br/>
-2、安装项目依赖,` pip install -r requirements.txt `,若在运行过程中，缺少某个xxx依赖，直接使用` pip install xxx `进行安装即可<br/>
+
+## 使用方法 <br/>
+
+1、部署网易云音乐API,<a href='https://github.com/Binaryify/NeteaseCloudMusicApi'><b/>NeteaseCloudMusicApi</b></a>，部署完成后，拿到你自己的API地址，填入到main.py中的``` api = '' ```内 <br/>
+2、安装项目依赖,``` pip install -r requirements.txt ```,若在运行过程中，缺少某个xxx依赖，直接使用``` pip install xxx ```进行安装即可<br/>
 3.填写<a href = 'https://sct.ftqq.com/'>server酱</a>的sendkey，没有的话可以注册一个。不想使用的话，直接跳过<br/>
-4.获取歌单id,在网易云音乐选择一个歌曲数量大于300首的歌单。歌单id获取方法为：选择歌单以链接的形式分享，链接中id=后的一串数字即为歌单id，然后填到main.py中` user_sl_id = '' `中。<br/>
+4.获取歌单id,在网易云音乐选择一个歌曲数量大于300首的歌单。歌单id获取方法为：选择歌单以链接的形式分享，链接中id=后的一串数字即为歌单id，然后填到main.py中``` user_sl_id = '' ```中。<br/>
 5.运行mian.py，使用手机网易云音乐扫码即可登录。注意：如果是部署到本地，请将main.py中的代码第59行注释掉，将第60行取消注释。如果是部署在服务器上，则不用修改。解释：因为在本地运行的话就直接显示二维码图片，直接扫即可。服务器上我使用第三方库渲染出的二维码是以字符串的形式显示的，成功率不是很好，但是基本上都没问题。<br/>
 
 ## 效果展示：<br/>
