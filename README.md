@@ -1,7 +1,7 @@
 # NeteaseMusci_Upgrade
 ## 网易云音乐每天自动打卡，云贝中心签到，听歌三百首，🚀🚀快速升级🚀🚀
 
-    本项目主要灵感来自<a href = 'https://github.com/ZainCheung/netease-cloud'><b>网易云音乐升级全家桶</b></a>,因为该项目已经停止维护，所以就自己动手写了一个简单的。
+本项目主要灵感来自<a href = 'https://github.com/ZainCheung/netease-cloud'><b>网易云音乐升级全家桶</b></a>,因为该项目已经停止维护，所以就自己动手写了一个简单的。
 作者水平有限，代码写的很臭😥😥😥，但是能跑🤩🤩🤩
 
 >>全部代码都在放在了main.py中
