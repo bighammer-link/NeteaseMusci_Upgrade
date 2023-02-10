@@ -166,9 +166,10 @@ def check(user_level,user_listensongs,user_cookies):
 '''
 使用server酱推送
 '''
-def server_push(user_level):
-    content = '恭喜！今日已经听歌三百首，完成任务,还需{}首歌，即可升至{}级'.format(grade[int(user_level)] - 300,user_level + 1)
-    url =  "https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(sckey, "网易云听课任务",content)
+def server_push(user_level,user_listensongs):
+    content = '恭喜！今日已经听歌三百首，完成任务,还需{}首歌，即可升至{}级'.format(grade[int(user_level)] - user_listensongs - 300,user_level + 1)
+    print(content)
+    url =  "https://sctapi.ftqq.com/{}.send?title={}&desp={}".format(sckey, "网易云听歌任务",content)
     requests.post(url)
     print('推送完成')
 
@@ -183,7 +184,7 @@ def main():
     
     check(user_level, user_listensongs, user_cookies)
     if sckey!='':
-      server_push(user_level)
+      server_push(user_level, user_listensongs)
     
 
 if __name__ == '__main__':
