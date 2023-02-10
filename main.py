@@ -154,7 +154,7 @@ def check(user_level,user_listensongs,user_cookies):
         url = api + '/scrobble?id=' + str(user_songslist[i])+'&sourceid='+str(user_songsformlist[i])+'&time=70'
         response = getResponse(url, {"r" : random.random()},user_cookies)
         num += 1
-        sleep_time = 70 + random.randint(3,10)
+        sleep_time = random.randint(8,15)
         time.sleep(sleep_time)
         print('已听完{}首歌，即将进行下一首。还需听{}首歌，即可升至{}级'.
                 format(num, grade[int(user_level)]-(user_listensongs+num), user_level+1))
