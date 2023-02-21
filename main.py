@@ -71,7 +71,7 @@ def code_login():
             time.sleep(2)
         elif result['code'] == 801:
             print('等待扫码,那么墨迹的吗')
-            time.sleep(2)
+            time.sleep(10)
         elif result['code'] == 802:
             print('待确认')
             time.sleep(2)
